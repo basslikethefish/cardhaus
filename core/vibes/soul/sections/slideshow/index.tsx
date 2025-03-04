@@ -194,7 +194,7 @@ export function Slideshow({ slides, playOnInit = true, interval = 5000, classNam
                     <Image
                       alt={image.alt}
                       blurDataURL={image.blurDataUrl}
-                      className="block h-20 w-full object-cover"
+                      className="block h-20 w-full object-contain"
                       fill
                       placeholder={
                         image.blurDataUrl != null && image.blurDataUrl !== '' ? 'blur' : 'empty'
