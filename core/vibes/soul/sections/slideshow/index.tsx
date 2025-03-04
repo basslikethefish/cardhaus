@@ -153,7 +153,7 @@ export function Slideshow({ slides, playOnInit = true, interval = 5000, classNam
   return (
     <section
       className={clsx(
-        'relative h-auto min-h-[50vh] bg-[var(--slideshow-background,color-mix(in_oklab,hsl(var(--primary)),black_75%))] @container',
+        'relative h-[80vh] bg-[var(--slideshow-background,color-mix(in_oklab,hsl(var(--primary)),black_75%))] @container',
         className,
       )}
     >
@@ -194,7 +194,7 @@ export function Slideshow({ slides, playOnInit = true, interval = 5000, classNam
                     <Image
                       alt={image.alt}
                       blurDataURL={image.blurDataUrl}
-                      className="block h-full w-full object-contain"
+                      className="block h-20 w-full object-contain"
                       fill
                       placeholder={
                         image.blurDataUrl != null && image.blurDataUrl !== '' ? 'blur' : 'empty'
